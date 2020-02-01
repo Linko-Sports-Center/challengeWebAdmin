@@ -89,7 +89,8 @@
           <tr id="table-header">
             <th style="width: 120px">挑戰賽編號</th>
             <th>挑戰賽內容</th>
-            <th style="width: 250px">挑戰賽期間</th>
+            <th style="width: 100px">挑戰賽開始</th>
+            <th style="width: 100px">挑戰賽結束</th>            
             <th style="width: 50px">操作</th>
           </tr>
         </thead>
@@ -101,9 +102,8 @@
           <tr id="table-header">
             <th style="width: 120px">歷史挑戰賽</th>
             <th>挑戰賽名稱</th>
-
-            <th style="width: 250px">挑戰賽期間</th>
-
+            <th style="width: 100px">挑戰賽開始</th>
+            <th style="width: 100px">挑戰賽結束</th>
             <th style="width: 50px">操作</th>
           </tr>
         </thead>
@@ -126,8 +126,8 @@
           <tr id="table-header">
             <th style="width: 120px">可參加挑戰賽</th>
             <th>挑戰賽內容</th>
-            <th style="width: 250px">挑戰賽期間</th>
-
+            <th style="width: 100px">挑戰賽開始</th>
+            <th style="width: 100px">挑戰賽結束</th>
             <th style="width: 50px">操作</th>
           </tr>
         </thead>
@@ -350,29 +350,7 @@
           });
         });
         
-        // Modify my myCouponsData 課程人數 to 繳費狀況 based on couponMember
-//        myCouponsData.forEach(function(coupon, index, array){
-//          //console.log(coupon[0]); // 挑戰賽編號
-//          
-//          couponMember.forEach(function(item, index, array){
-//            if (item[0] == coupon[0]) {
-//              //console.log(item);
-//              
-//              for (var i=1; i<item.length;i++){
-//                //console.log(item[i][0], item[i][1]);
-//                
-//                if (item[i][0]==userName) {
-//                  //console.log(userName, item[i][1]);
-//                  coupon[5]=item[i][1];
-//                  //console.log("bbb", coupon);
-//                }
-//              }
-//            }  
-//          });
-//          
-//          //console.log("next");
-//        });
-        
+      
         myCouponsHistory = [];
         couponHistory.forEach(function(coupon, index, array) {
           //console.log(coupon);
@@ -507,9 +485,13 @@
             //title: 挑戰賽內容
           },
           {
-            //title: "挑戰賽期間"
+            //title: "挑戰賽開始"
             className: "centerCell"
           },
+          {
+            //title: "挑戰賽結束"
+            className: "centerCell"
+          },                  
           {
             //title: "操作",
             data: null,
@@ -646,12 +628,14 @@
           {
             //title: 挑戰賽名稱
           },
-
           {
-            //title: "挑戰賽期間"
+            //title: "挑戰賽開始"
             className: "centerCell"
           },
-
+          {
+            //title: "挑戰賽結束"
+            className: "centerCell"
+          },
           {
             //title: "操作",
             data: null,
@@ -683,10 +667,13 @@
           },
 
           {
-            //title: "挑戰賽期間"
+            //title: "挑戰賽開始"
             className: "centerCell"
           },
-
+          {
+            //title: "挑戰賽結束"
+            className: "centerCell"
+          },
           {
             //title: "操作",
             data: null,
