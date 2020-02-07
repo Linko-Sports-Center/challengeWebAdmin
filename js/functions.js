@@ -44,7 +44,8 @@ function couponConfirm() {
             $("#couponDateStart").val(),
             $("#couponDateEnd").val(),
             $("#挑戰賽內容").val(),
-            $("#couponOtherDesc").val()
+            $("#couponOtherDesc").val(),
+            $("#couponFee").val()
           ];
 
   console.log(dataToAdd);
@@ -178,20 +179,22 @@ function couponUpdate() {
     alert("確認碼輸入錯誤，不進行更新動作");
     return 0;
   } else {
-    var dataToReplace = [
-      couponNumber,
-      $("#couponDetail").val(),
-      $("#couponDateDetail").val(),
-      $("#couponOtherDescDetail").val(),
-    ];
+//    var dataToReplace = [
+//      couponNumber,
+//      $("#couponDetail").val(),
+//      $("#couponDateDetail").val(),
+//      $("#couponOtherDescDetail").val(),
+//      $("#couponFeeDetail").val()
+//    ];
 
     var dataToReplace = [
       couponNumber,
       $("#couponDetail").val(),
       $("#couponDateStartDetail").val(),
       $("#couponDateEndDetail").val(),
-      $("#挑戰賽內容Detail").val(),      
+      $("#挑戰賽內容Detail").val(),    
       $("#couponOtherDescDetail").val(),
+      $("#couponFeeDetail").val(),      
     ];    
     
     console.log(dataToReplace);

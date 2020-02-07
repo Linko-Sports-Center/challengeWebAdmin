@@ -7,7 +7,7 @@ $.loading = {
                                     '<i class="spin-dot-item"></i>' +
                                     '<i class="spin-dot-item"></i>' +
                                 '</span>' +
-                                '<span class="tips">'+loadingTips+'</span>'+
+                                '<span class="tips" id="loadingTips">'+loadingTips+'</span>'+
                            '</div>'
 
         $('body').append(_LoadingHtml);

@@ -150,6 +150,8 @@ function initMainPage() {
     $("#couponDateEndDetail").val(data[3]);    
     $("#挑戰賽內容Detail").val(data[4]);    
     $("#couponOtherDescDetail").val(data[5]);
+    console.log(data[6]);
+    $("#couponFeeDetail").val(data[6]);    
 
     couponMember.forEach(function (item, index, array) {
       if (item[0] == data[0]) {

@@ -18,6 +18,8 @@
   
   <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
   
+  <script src="js/jquery.loading.js"></script>
+  
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
   <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 
@@ -112,7 +114,9 @@
              
       <div class="couponLabel">挑戰賽說明</div><textarea cols="39" rows="5" id="挑戰賽內容" style="margin-left: 9px; padding-left: 13px; font-size: 20px; font-family: 'Noto Sans TC'" placeholder="請說明挑戰賽內容，規則，獎品，收費以及獎勵方式
       "></textarea><br>    
-                      
+
+      <div class="couponLabel">挑戰賽費用</div> <input id="couponFee" class="couponInput" type="text" placeholder="請輸入挑戰賽費用，0 表示免費"><br>
+                                                          
       <div class="couponLabel">其他說明</div> <input id="couponOtherDesc" class="couponInput" type="text" placeholder="請輸入其他說明"><br>
 
       <br>
@@ -144,8 +148,11 @@
       <span><input id="couponDateEndDetail" class="couponInputDetail" type="date"></span>
       <br>
  
-      <div class="couponLabelDetail">挑戰賽說明</div><textarea cols="48" rows="5" id="挑戰賽內容Detail" style="margin-left: 6px; padding-left: 2px; font-size: 16px; font-family: 'Noto Sans TC'"></textarea><br>                     
-                     
+      <div class="couponLabelDetail">挑戰賽說明</div><textarea cols="48" rows="5" id="挑戰賽內容Detail" style="margin-left: 6px; padding-left: 2px; font-size: 16px; font-family: 'Noto Sans TC'"></textarea>
+      <br>                     
+      
+      <div class="couponLabelDetail">挑戰賽費用</div> <input id="couponFeeDetail" class="couponInputDetail" type="text"><br>
+                           
       <div class="couponLabelDetail">其他說明</div> <input id="couponOtherDescDetail" class="couponInputDetail" type="text"><br>
 
       <br>
