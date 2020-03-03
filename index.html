@@ -119,6 +119,9 @@
                                                           
       <div class="couponLabel">其他說明</div> <input id="couponOtherDesc" class="couponInput" type="text" placeholder="請輸入其他說明"><br>
 
+      <div class="couponLabel">兌換條件</div> <input id="coupon兌換條件" class="couponInput" type="text" style="width: 200px" placeholder="例如: 10">公里以上<br> 
+
+      <div class="couponLabel">獎品數量</div> <input id="coupon獎品數量" class="couponInput" type="text" style="width: 200px" placeholder="例如: 10">個<br>                     
       <br>
       <button class="btn-blue" onclick="couponConfirm()">確定</button>
       <button class="btn-red" onclick="couponCancel()">取消</button>
@@ -155,6 +158,10 @@
                            
       <div class="couponLabelDetail">其他說明</div> <input id="couponOtherDescDetail" class="couponInputDetail" type="text"><br>
 
+      <div class="couponLabelDetail">其他說明</div> <input id="coupon兌換條件Detail" class="couponInputDetail" type="text" style="width: 200px" placeholder="例如: 10">公里以上<br>
+           
+      <div class="couponLabelDetail">其他說明</div> <input id="coupon獎品數量Detail" class="couponInputDetail" type="text" style="width: 200px" placeholder="例如: 10">個<br>
+                 
       <br>
 
       <button class="btn-blue" onclick="backToHome()"><i class="fa fa-arrow-left"></i>&nbsp 回到 挑戰賽管理</button>
@@ -253,7 +260,7 @@
   <script type="text/javascript">
     var couponNum = 0; // Update from Database
     var inaddCoupon = false;
-    var version = " V1.0";
+    var version = " V1.1";
 
 //    $("#titleHeader").text("林口運動中心 - 挑戰賽管理"+version);
     $("#titleHeader").text("挑戰賽管理"+version);    

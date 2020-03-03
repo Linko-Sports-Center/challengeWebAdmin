@@ -151,7 +151,9 @@ function initMainPage() {
     $("#挑戰賽內容Detail").val(data[4]);    
     $("#couponOtherDescDetail").val(data[5]);
     console.log(data[6]);
-    $("#couponFeeDetail").val(data[6]);    
+    $("#couponFeeDetail").val(data[6]);  
+    $("#coupon兌換條件Detail").val(data[7]);    
+    $("#coupon獎品數量Detail").val(data[8]);        
 
     couponMember.forEach(function (item, index, array) {
       if (item[0] == data[0]) {

@@ -45,7 +45,9 @@ function couponConfirm() {
             $("#couponDateEnd").val(),
             $("#挑戰賽內容").val(),
             $("#couponOtherDesc").val(),
-            $("#couponFee").val()
+            $("#couponFee").val(),
+            $("#coupon兌換條件").val(),      
+            $("#coupon獎品數量").val(),    
           ];
 
   console.log(dataToAdd);
@@ -194,7 +196,9 @@ function couponUpdate() {
       $("#couponDateEndDetail").val(),
       $("#挑戰賽內容Detail").val(),    
       $("#couponOtherDescDetail").val(),
-      $("#couponFeeDetail").val(),      
+      $("#couponFeeDetail").val(), 
+      $("#coupon兌換條件Detail").val(),  
+      $("#coupon獎品數量Detail").val(),           
     ];    
     
     console.log(dataToReplace);
